@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
+import NavigationBar from './NavigationBar'
 
 
 const View = () => {
@@ -30,7 +31,7 @@ const View = () => {
 
     return (
         <div>
-            
+            <NavigationBar/>
             
             
             <table class="table">
@@ -59,7 +60,7 @@ const View = () => {
                                     <td>{data.dept}</td>
                                     <td>{data.sem}</td>
                                     <td>{data.course}</td>
-                                    <td>{data.systemnumber}</td>
+                                    <td>{data.systemNumber}</td>
                                     <td>{data.loginTime}</td>
                                     <td>{data.logoutTime}</td>
                                     <td>{data.date}</td>
